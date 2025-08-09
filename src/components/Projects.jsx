@@ -7,8 +7,7 @@ const PROJECTS = [
     title: "AI‑Powered Blog Generator",
     description:
       "MERN app with Gemini API integration for automated blog creation, JWT auth, and mobile‑friendly UI.",
-    image:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=60",
+    image: "/src/assets/project1.png",
     tech: ["React", "Node", "Express", "MongoDB", "Tailwind"],
     live: "https://ai-blog-app-two.vercel.app/",
     repo: "https://github.com/mani901/Ai-Blog-App",
@@ -17,8 +16,7 @@ const PROJECTS = [
     title: "Multi‑Role Job Portal",
     description:
       "MERN job portal with role‑based dashboards, JWT secured logins, postings, filtering, and application tracking.",
-    image:
-      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=60",
+    image: "/src/assets/project2.png",
     tech: ["React", "Node", "Express", "MongoDB", "Tailwind"],
     live: "#",
     repo: "https://github.com/mani901/Mern-JobPortal",
