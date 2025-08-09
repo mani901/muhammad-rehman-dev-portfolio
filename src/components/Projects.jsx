@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import project1 from "../assets/project1.png";
+import project2 from "../assets/project2.png";
 
 // Project cards mapped from an array instead of hardcoding
 const PROJECTS = [
@@ -7,7 +9,7 @@ const PROJECTS = [
     title: "AI‑Powered Blog Generator",
     description:
       "MERN app with Gemini API integration for automated blog creation, JWT auth, and mobile‑friendly UI.",
-    image: "/src/assets/project1.PNG",
+    image: project1,
     tech: ["React", "Node", "Express", "MongoDB", "Tailwind"],
     live: "https://ai-blog-app-two.vercel.app/",
     repo: "https://github.com/mani901/Ai-Blog-App",
@@ -16,7 +18,7 @@ const PROJECTS = [
     title: "Multi‑Role Job Portal",
     description:
       "MERN job portal with role‑based dashboards, JWT secured logins, postings, filtering, and application tracking.",
-    image: "/src/assets/project2.PNG",
+    image: project2,
     tech: ["React", "Node", "Express", "MongoDB", "Tailwind"],
     live: "#",
     repo: "https://github.com/mani901/Mern-JobPortal",
