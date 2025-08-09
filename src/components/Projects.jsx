@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import project1 from "../assets/project1.png";
-import project2 from "../assets/project2.png";
+import project1 from "../assets/project1.PNG";
+import project2 from "../assets/project2.PNG";
 
 // Project cards mapped from an array instead of hardcoding
 const PROJECTS = [
