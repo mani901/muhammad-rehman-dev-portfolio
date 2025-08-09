@@ -1,7 +1,9 @@
 # Muhammad Rehman's MERN Portfolio
 
 _(React + Vite + Tailwind + Framer Motion)_
+
 Live Preview : https://muhammad-rehman-dev-portfolio.vercel.app/
+
 Hey there! This is my clean, speedy portfolio template built for final-year software engineering students and MERN stack developers. It's recruiter-friendly, has readable code, and is easy to customize.
 
 ### What's Inside?
