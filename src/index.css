@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* Keep only non-animation custom utilities; animations are handled by Framer Motion */
+@layer utilities {
+  .shadow-glow {
+    box-shadow: 0 0 0 2px rgb(45 212 191 / 20%), 0 0 30px -10px rgb(34 211 238 / 40%);
+  }
+}
