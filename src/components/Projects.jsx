@@ -20,7 +20,7 @@ const PROJECTS = [
     image:
       "https://res.cloudinary.com/dett0ydgh/image/upload/v1754718716/project2_khllpw.png",
     tech: ["React", "Node", "Express", "MongoDB", "Tailwind"],
-    live: "#",
+    live: "https://job-portal-vercel.vercel.app/",
     repo: "https://github.com/mani901/Mern-JobPortal",
   },
 ];
