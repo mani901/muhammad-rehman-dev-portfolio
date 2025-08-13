@@ -10,7 +10,7 @@ const PROJECTS = [
     image:
       "https://res.cloudinary.com/dett0ydgh/image/upload/v1754718716/project1_iepfze.png",
     tech: ["React", "Node", "Express", "MongoDB", "Tailwind"],
-    live: "https://ai-blog-app-two.vercel.app/",
+    live: "https://ai-blog-app-dy64.vercel.app/",
     repo: "https://github.com/mani901/Ai-Blog-App",
   },
   {
