@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, FileDown, Mail, MapPin } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/icons";
@@ -41,11 +42,12 @@ export function Hero() {
         }}
       />
 
+      <div className="mx-auto grid w-full max-w-6xl items-center gap-10 px-5 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-8">
       <motion.div
         variants={container}
         initial="hidden"
         animate="visible"
-        className="mx-auto w-full max-w-5xl px-5 sm:px-6"
+        className="order-2 lg:order-1"
       >
         <motion.span
           variants={item}
@@ -117,6 +119,34 @@ export function Hero() {
           </a>
         </motion.div>
       </motion.div>
+
+        {/* Portrait */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.92 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
+          className="order-1 flex justify-center lg:order-2 lg:justify-end"
+        >
+          <div className="relative w-full max-w-60 sm:max-w-76 lg:max-w-88">
+            {/* Soft glow behind the circular frame */}
+            <div
+              aria-hidden
+              className="absolute inset-0 -z-10 rounded-full bg-accent/15 blur-2xl"
+            />
+            {/* Circular framed portrait */}
+            <div className="relative aspect-square overflow-hidden rounded-full bg-linear-to-br from-accent-soft via-white to-accent/10 shadow-xl ring-1 ring-accent/15">
+              <Image
+                src="/portfolio.png"
+                alt={`Portrait of ${profile.name}`}
+                fill
+                priority
+                sizes="(max-width: 1024px) 80vw, 22rem"
+                className="object-cover object-top"
+              />
+            </div>
+          </div>
+        </motion.div>
+      </div>
     </section>
   );
 }
