@@ -32,10 +32,17 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
-
+venv
+resume_v3.py
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# python (resume generator)
+/venv
+__pycache__/
+# generated resume artifact (the served copy lives in /public/resume.pdf)
+/Muhammad_Rehman_Resume_v3.pdf

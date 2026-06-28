@@ -1,26 +1,61 @@
 @import "tailwindcss";
 
+/* ── Design tokens ─────────────────────────────────────────────────────────
+   Light, minimal palette. Blue accent (#1F4E8C) echoes the PDF resume. */
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --surface: #f8fafc;        /* slate-50  – section alternation */
+  --foreground: #0f172a;     /* slate-900 – primary text */
+  --muted: #475569;          /* slate-600 – secondary text */
+  --muted-2: #64748b;        /* slate-500 */
+  --border: #e2e8f0;         /* slate-200 */
+  --accent: #1f4e8c;         /* primary blue */
+  --accent-strong: #173d6e;  /* darker hover */
+  --accent-soft: #eaf1fb;    /* tinted badge / chip background */
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-2: var(--muted-2);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-soft: var(--accent-soft);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  /* offset anchor jumps so the sticky navbar doesn't cover headings */
+  scroll-padding-top: 5rem;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Thin custom scrollbar for a more polished feel */
+::selection {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
+
+/* Respect users who prefer reduced motion: kill smooth scroll + animations */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
 }
