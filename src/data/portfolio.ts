@@ -15,7 +15,7 @@ export const profile = {
   resume: "/resume.pdf",
   /** One-line pitch shown under the name in the hero. */
   tagline:
-    "I build production-grade web applications end-to-end — from MongoDB schema design to CI/CD deployment — with the MERN stack.",
+    "I build production-grade web applications end-to-end from MongoDB schema design to CI/CD deployment with the MERN stack.",
   summary:
     "Full-stack developer with 1 year of professional experience building production-grade web applications using the MERN stack. Strong expertise in React.js, Next.js, Node.js, MongoDB, and CI/CD automation using GitHub Actions. Proven ability to reduce production errors by 35%, cut deployment time by 50%, and deliver secure, scalable applications from schema design to deployment.",
 } as const;
@@ -132,7 +132,7 @@ export const projects: Project[] = [
     description:
       "Production-grade Pakistani jewellery e-commerce platform with 3 React/Node apps, 29 REST endpoints, and an AI Virtual Try-On microservice covering the complete retail lifecycle from catalogue to payment to delivery.",
     highlights: [
-      "Built an AI Virtual Try-On system: a Python/FastAPI microservice uses MediaPipe FaceMesh (468 landmarks) and a trained RandomForest classifier to detect 6 face shapes and generate real-time jewellery overlays via OpenCV alpha blending — personalised recommendations delivered per face shape.",
+      "Built an AI Virtual Try-On system: a Python/FastAPI microservice uses MediaPipe FaceMesh (468 landmarks) and a trained RandomForest classifier to detect 6 face shapes and generate real-time jewellery overlays via OpenCV alpha blending personalised recommendations delivered per face shape.",
       "Architected a 3-app MERN platform (customer storefront, admin dashboard, AI server) with JWT multi-role auth, OTP email verification (Nodemailer + MongoDB 10-min TTL), and Cloudinary CDN for multi-image product management with automatic file cleanup.",
       "Implemented an end-to-end e-commerce flow: Stripe payments (PKR), cash on delivery, 5-stage order tracking, wishlist, star-rating reviews, and search/filter across 4 jewellery categories × 5 materials.",
     ],
@@ -161,9 +161,9 @@ export const projects: Project[] = [
     description:
       "End-to-end utility management platform that auto-extracts electricity meter readings from photographs using two fine-tuned YOLOv8 object detection models, served by a full TypeScript + React + PostgreSQL stack with dedicated dashboards for Admin, Field Staff, and Consumer roles.",
     highlights: [
-      "Trained two YOLOv8 models on 11,000+ real-world meter images — one for meter ROI cropping, one for digit recognition — and engineered a 7-variant OpenCV preprocessing pipeline (CLAHE, bilateral filtering, gamma correction, unsharp masking, morphological ops) with automatic confidence-score selection for reliable extraction across varied lighting.",
+      "Trained two YOLOv8 models on 11,000+ real-world meter images one for meter ROI cropping, one for digit recognition and engineered a 7-variant OpenCV preprocessing pipeline (CLAHE, bilateral filtering, gamma correction, unsharp masking, morphological ops) with automatic confidence-score selection for reliable extraction across varied lighting.",
       "Built a confidence-based hybrid AI + human review workflow: low-confidence predictions are automatically flagged for administrator approval before billing, balancing automation with accuracy in a zero-error-tolerance domain.",
-      "Delivered a production-grade 3-tier architecture (React + Vite frontend, Express REST API with 12+ route groups, FastAPI AI inference server) with JWT auth, RBAC, an automated monthly billing engine, cron-scheduled jobs, dispute management, audit logging, and PDF/CSV export — deployed on Vercel with Cloudinary CDN.",
+      "Delivered a production-grade 3-tier architecture (React + Vite frontend, Express REST API with 12+ route groups, FastAPI AI inference server) with JWT auth, RBAC, an automated monthly billing engine, cron-scheduled jobs, dispute management, audit logging, and PDF/CSV export deployed on Vercel with Cloudinary CDN.",
     ],
     tech: [
       "TypeScript",
