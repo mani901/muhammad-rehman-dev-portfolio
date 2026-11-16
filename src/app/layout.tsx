@@ -11,7 +11,7 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: `${profile.name} — ${profile.title}`,
+  title: `${profile.name} | ${profile.title}`,
   description: profile.summary,
   keywords: [
     "Muhammad Rehman",
@@ -32,14 +32,14 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: profile.name }],
   openGraph: {
-    title: `${profile.name} — ${profile.title}`,
+    title: `${profile.name} | ${profile.title}`,
     description: profile.summary,
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary",
-    title: `${profile.name} — ${profile.title}`,
+    title: `${profile.name} | ${profile.title}`,
     description: profile.summary,
   },
 };

@@ -41,7 +41,7 @@ export function Contact() {
       <Reveal className="mx-auto max-w-2xl text-center">
         <p className="text-base leading-relaxed text-muted">
           I&apos;m open to full-stack roles and freelance projects. The fastest way to
-          reach me is by email — I&apos;ll get back to you promptly.
+          reach me is by email. I&apos;ll get back to you promptly.
         </p>
       </Reveal>
 

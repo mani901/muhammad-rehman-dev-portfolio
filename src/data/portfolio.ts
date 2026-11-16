@@ -1,6 +1,6 @@
 /**
  * Single source of truth for all portfolio content.
- * Edit text here — components read from these typed objects.
+ * Edit text here: components read from these typed objects.
  * Content mirrors the master resume (Muhammad_Rehman_Resume.pdf, Oct 2026).
  */
 
@@ -15,7 +15,7 @@ export const profile = {
   resume: "/resume.pdf",
   /** One-line pitch shown under the name in the hero. */
   tagline:
-    "I build production-grade web applications end-to-end — from database schema design to CI/CD deployment — with the MERN stack and LLM integration.",
+    "I build production-grade web applications end-to-end, from database schema design to CI/CD deployment, with the MERN stack and LLM integration.",
   summary:
     "Full-stack developer with 1+ years of experience designing and deploying scalable web applications using React, Next.js, Node.js, PostgreSQL, and MongoDB. Proven track record of delivering production-grade systems end-to-end, distinguished by practical expertise in integrating LLM workflows, vector search, and custom AI microservices. Skilled at streamlining release cycles through GitHub Actions CI/CD pipelines and engineering secure REST APIs with robust payment and authentication infrastructures.",
 } as const;
@@ -98,7 +98,7 @@ export const experience: Experience[] = [
     role: "Associate MERN Stack Developer",
     company: "PixelPK",
     location: "Lahore, Pakistan",
-    period: "Jan 2026 – Present",
+    period: "Jan 2026 - Present",
     bullets: [
       "Delivered production web platforms end-to-end with PostgreSQL/MongoDB schema design, REST APIs, and React front-ends as the primary developer on multiple client products.",
       "Integrated LLM workflows, Atlas Vector Search, and secure Stripe billing infrastructure across client production applications.",
@@ -112,7 +112,7 @@ export const experience: Experience[] = [
     role: "MERN Stack Intern",
     company: "PixelPK",
     location: "Lahore, Pakistan",
-    period: "Sep 2025 – Dec 2025",
+    period: "Sep 2025 - Dec 2025",
     bullets: [
       "Translated Figma designs into pixel-perfect, fully responsive React and Next.js interfaces with lazy loading and reusable component libraries.",
       "Built full-stack features from MongoDB schema design to REST APIs and implemented JWT-based authentication with role-based access control.",
@@ -126,7 +126,7 @@ export type Project = {
   tagline: string;
   /** Omitted when the exact build period is not on record. */
   period?: string;
-  /** GitHub repo or PR link. Omitted for private repos — use `live` instead. */
+  /** GitHub repo or PR link. Omitted for private repos; use `live` instead. */
   github?: string;
   /** Live deployment URL. */
   live?: string;
@@ -186,7 +186,7 @@ export const projects: Project[] = [
   {
     title: "Live Cricket Scorer",
     tagline: "Real-time cricket scoring platform",
-    period: "Oct 2026 – Present",
+    period: "Oct 2026 - Present",
     live: "https://cricket-scorer-by-rehman.online/",
     description:
       "Live, production cricket scoring app with real-time ball-by-ball updates, deployed on AWS EC2 behind a custom domain with HTTPS and a pull-model auto-deploy on every push to main.",
@@ -212,7 +212,7 @@ export const projects: Project[] = [
     period: "Nov 2026",
     github: "https://github.com/mani901/next-fastify-audit-skill",
     description:
-      "Open-source agent skill (Claude Code / Codex / Cursor) that audits a Next.js App Router + Fastify codebase for security, performance, and API-design issues — including LLM-integration risks — and only reports findings it can prove from the code.",
+      "Open-source agent skill (Claude Code / Codex / Cursor) that audits a Next.js App Router + Fastify codebase for security, performance, and API-design issues, including LLM-integration risks, and only reports findings it can prove from the code.",
     highlights: [
       "Ships a zero-dependency Node scanner with 16 rules (security, LLM, performance, API design) that emits JSON findings with file:line evidence.",
       "Verified on an intentionally vulnerable fixture app: 23 findings (8 high, 12 medium, 3 low), all 16 rules firing, with zero false positives on the clean file.",
@@ -224,7 +224,7 @@ export const projects: Project[] = [
   {
     title: "Zewar House",
     tagline: "AI-Powered Full-Stack E-Commerce Platform",
-    period: "Oct 2025 – May 2026",
+    period: "Oct 2025 - May 2026",
     github: "https://github.com/mani901/virtual-jewelry-tryon-ecommerce",
     description:
       "Production-grade Pakistani jewellery e-commerce platform with 3 React/Node apps, 29 REST endpoints, and an AI Virtual Try-On microservice covering the complete retail lifecycle from catalogue to payment to delivery.",
@@ -253,7 +253,7 @@ export const projects: Project[] = [
   {
     title: "AI-Powered Smart Meter Reading System",
     tagline: "Computer-vision utility management platform",
-    period: "Sep 2025 – May 2026",
+    period: "Sep 2025 - May 2026",
     github: "https://github.com/mani901/AI-Powered-Meter-Reading-management.git",
     description:
       "End-to-end utility management platform that auto-extracts electricity meter readings from photographs using two fine-tuned YOLOv8 object detection models, served by a full TypeScript + React + PostgreSQL stack with dedicated dashboards for Admin, Field Staff, and Consumer roles.",
@@ -280,7 +280,7 @@ export const projects: Project[] = [
   {
     title: "Multi-Role Job Portal",
     tagline: "Role-based job board for employers & candidates",
-    period: "Aug 2025 – Sep 2025",
+    period: "Aug 2025 - Sep 2025",
     github: "https://github.com/mani901/Mern-JobPortal.git",
     description:
       "Full-featured job portal with role-based JWT authentication, job posting, filtering, and application tracking for employers and candidates.",
@@ -291,7 +291,7 @@ export const projects: Project[] = [
     monogram: "JP",
   },
   {
-    title: "fastify-compress — Open-Source Contribution",
+    title: "fastify-compress: Open-Source Contribution",
     tagline: "Upstream fix in the Fastify ecosystem",
     period: "Nov 2026",
     github: "https://github.com/fastify/fastify-compress/pull/443",
@@ -309,7 +309,7 @@ export const projects: Project[] = [
 export const education = {
   degree: "Bachelor of Science in Software Engineering",
   institution: "University of Lahore",
-  period: "Jan 2022 – Jun 2026",
+  period: "Jan 2022 - Jun 2026",
   cgpa: "3.92 / 4.0",
 } as const;
 

@@ -4,9 +4,9 @@
    Light, minimal palette. Blue accent (#1F4E8C) echoes the PDF resume. */
 :root {
   --background: #ffffff;
-  --surface: #f8fafc;        /* slate-50  – section alternation */
-  --foreground: #0f172a;     /* slate-900 – primary text */
-  --muted: #475569;          /* slate-600 – secondary text */
+  --surface: #f8fafc;        /* slate-50  - section alternation */
+  --foreground: #0f172a;     /* slate-900 - primary text */
+  --muted: #475569;          /* slate-600 - secondary text */
   --muted-2: #64748b;        /* slate-500 */
   --border: #e2e8f0;         /* slate-200 */
   --accent: #1f4e8c;         /* primary blue */
