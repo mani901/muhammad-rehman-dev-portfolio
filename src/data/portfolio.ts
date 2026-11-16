@@ -95,11 +95,22 @@ export type Experience = {
 
 export const experience: Experience[] = [
   {
+    role: "Junior Software Engineer",
+    company: "PixelPK",
+    location: "Lahore, Pakistan",
+    period: "Nov 2026 - Present",
+    bullets: [
+      "Promoted from Associate MERN Stack Developer in November 2026.",
+    ],
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "PostgreSQL", "Tailwind CSS"],
+  },
+  {
     role: "Associate MERN Stack Developer",
     company: "PixelPK",
     location: "Lahore, Pakistan",
-    period: "Jan 2026 - Present",
+    period: "Jan 2026 - Nov 2026",
     bullets: [
+      "Built and scaled full-stack applications (MERN stack), delivering 25+ major features including analytics dashboards, monetization systems, badge systems, and advanced search.",
       "Delivered production web platforms end-to-end with PostgreSQL/MongoDB schema design, REST APIs, and React front-ends as the primary developer on multiple client products.",
       "Integrated LLM workflows, Atlas Vector Search, and secure Stripe billing infrastructure across client production applications.",
       "Collaborated with cross-functional design and analytics teams to build REST APIs and data-driven dashboards powering personalized backend workflows.",
