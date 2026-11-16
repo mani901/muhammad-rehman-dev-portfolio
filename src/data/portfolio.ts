@@ -123,7 +123,7 @@ export const experience: Experience[] = [
     role: "MERN Stack Intern",
     company: "PixelPK",
     location: "Lahore, Pakistan",
-    period: "Sep 2025 - Dec 2025",
+    period: "Oct 2025 - Dec 2025",
     bullets: [
       "Translated Figma designs into pixel-perfect, fully responsive React and Next.js interfaces with lazy loading and reusable component libraries.",
       "Built full-stack features from MongoDB schema design to REST APIs and implemented JWT-based authentication with role-based access control.",

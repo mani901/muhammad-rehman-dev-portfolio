@@ -50,18 +50,25 @@ when the exact build period is not on record.
 
 ## Updating the Resume PDF
 
-The downloadable resume is a copy of the master resume
-(`Muhammad_Rehman_Resume.pdf`). Whenever the master resume changes, copy it
-into `public/` under the same name:
+The downloadable resume is a generated 1-page PDF built from
+`~/workspace/job-applications/make_tailored.py` (the same pipeline as the
+job-application resumes), so it always carries the current role and dates.
+To regenerate it after a role or profile change, run the portfolio-resume
+build in that script's style and verify it, then copy the result into
+`public/`:
 
 ```bash
-cp <path-to-master>/Muhammad_Rehman_Resume.pdf public/resume.pdf
+python3 ~/workspace/job-applications/verify.py <new-resume>.pdf
+cp <new-resume>.pdf public/resume.pdf
 ```
 
-The current copy is the full 2-page master resume (Oct 2026): 1+ years of
-experience, Pakistan LawBot, Cesto Shop, LLM integration, and the PixelPK
-Associate role. Do not substitute a job-tailored 1-page PDF here; those are
-per-application only.
+The current copy (Nov 2026) is the 1-page portfolio resume: Junior Software
+Engineer at PixelPK (Nov 2026 - Present), Associate MERN Stack Developer
+(Jan 2026 - Nov 2026), MERN Stack Intern (Oct 2025 - Dec 2025), Pakistan
+LawBot and Cesto Shop. Verified: exactly 1 page, 94.0% fill, 6 working
+links, no em/en dashes. The full 2-page master resume
+(`Muhammad_Rehman_Resume.pdf`, Oct 2026) is a separate file and is NOT what
+the site serves.
 
 ## Local Development
 
