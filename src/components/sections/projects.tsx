@@ -1,3 +1,4 @@
+import { ExternalLink } from "lucide-react";
 import { GithubIcon } from "@/components/icons";
 import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
@@ -26,7 +27,9 @@ export function Projects() {
                       <h3 className="text-lg font-bold text-foreground">{p.title}</h3>
                       <p className="text-sm font-medium text-accent">{p.tagline}</p>
                     </div>
-                    <span className="shrink-0 text-sm text-muted-2">{p.period}</span>
+                    {p.period ? (
+                      <span className="shrink-0 text-sm text-muted-2">{p.period}</span>
+                    ) : null}
                   </div>
 
                   <p className="mt-3 text-sm leading-relaxed text-muted">
@@ -48,14 +51,28 @@ export function Projects() {
                     ))}
                   </div>
 
-                  <a
-                    href={p.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-accent transition-colors hover:text-accent-strong"
-                  >
-                    <GithubIcon size={16} /> View on GitHub
-                  </a>
+                  <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2">
+                    {p.live ? (
+                      <a
+                        href={p.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-sm font-semibold text-accent transition-colors hover:text-accent-strong"
+                      >
+                        <ExternalLink size={16} /> Visit Live Site
+                      </a>
+                    ) : null}
+                    {p.github ? (
+                      <a
+                        href={p.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-sm font-semibold text-accent transition-colors hover:text-accent-strong"
+                      >
+                        <GithubIcon size={16} /> View on GitHub
+                      </a>
+                    ) : null}
+                  </div>
                 </CardContent>
               </div>
             </Card>
